@@ -1,0 +1,80 @@
+# Day 2: Connect Linux Server to GitHub Using SSH Key
+
+## Objective
+
+Learned how to connect a Linux server to GitHub using SSH authentication.
+
+---
+
+## Step 1: Generate SSH Key
+
+```bash
+ssh-keygen
+```
+
+Press **Enter** 3 times to accept the default settings and create the SSH key pair.
+
+---
+
+## Step 2: View Hidden Files
+
+```bash
+ls -a
+```
+
+This shows hidden files and directories, including `.ssh`.
+
+---
+
+## Step 3: Go to SSH Directory
+
+```bash
+cd .ssh
+```
+
+Check the generated keys:
+
+```bash
+ls
+```
+
+Example output:
+
+```text
+id_ed25519
+id_ed25519.pub
+```
+
+---
+
+## Step 4: View Public Key
+
+```bash
+cat id_ed25519.pub
+```
+
+Copy the entire key displayed in the terminal.
+
+---
+
+## Step 5: Add SSH Key to GitHub
+
+1. Login to GitHub.
+2. Go to **Settings**.
+3. Click **SSH and GPG Keys**.
+4. Click **New SSH Key**.
+5. Enter a title (e.g., Ubuntu Server).
+6. Paste the copied public key.
+7. Click **Add SSH Key**.
+
+---
+
+
+## Day 2 Learning
+* Generated SSH keys on a Linux server.
+* Understood the difference between public and private keys.
+* Located SSH keys inside the `.ssh` directory.
+* Copied the public key and added it to GitHub.
+* Connected a server to GitHub securely using SSH authentication.
+* Verified the connection between GitHub and the server.
+
